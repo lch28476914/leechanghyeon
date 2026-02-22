@@ -101,3 +101,11 @@ body {
 .submit-btn:active {
     transform: scale(0.98);
 }
+
+.comments-section {
+    background: var(--ticket-bg);
+    padding: 2rem;
+    border-radius: 1rem;
+    box-shadow: 0 10px 20px var(--shadow-color);
+    transition: background 0.3s;
+}
