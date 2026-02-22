@@ -1,7 +1,30 @@
+:root {
+    --bg-color: oklch(98.15% 0.0106 248.44);
+    --text-color: oklch(20% 0.0106 248.44);
+    --ticket-bg: oklch(92.71% 0.081 254.88);
+    --number-bg: oklch(80.59% 0.1316 264.7);
+    --button-bg: oklch(69.8% 0.224 264.7);
+    --button-hover-bg: oklch(65% 0.224 264.7);
+    --shadow-color: oklch(0% 0 0 / 20%);
+}
+
+[data-theme="dark"] {
+    --bg-color: oklch(20% 0.02 248.44);
+    --text-color: oklch(98.15% 0.0106 248.44);
+    --ticket-bg: oklch(30% 0.04 254.88);
+    --number-bg: oklch(50% 0.1 264.7);
+    --button-bg: oklch(45% 0.15 264.7);
+    --button-hover-bg: oklch(40% 0.15 264.7);
+    --shadow-color: oklch(0% 0 0 / 50%);
+}
+
 body {
     display: grid;
     place-content: center;
     min-height: 100vh;
-    background-color: oklch(98.15% 0.0106 248.44);
+    background-color: var(--bg-color);
+    color: var(--text-color);
     font-family: sans-serif;
+    transition: background-color 0.3s, color 0.3s;
+    margin: 0;
 }
