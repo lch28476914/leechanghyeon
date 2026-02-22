@@ -1,1 +1,7 @@
-/* Add styles here */
+body {
+    display: grid;
+    place-content: center;
+    min-height: 100vh;
+    background-color: oklch(98.15% 0.0106 248.44);
+    font-family: sans-serif;
+}
